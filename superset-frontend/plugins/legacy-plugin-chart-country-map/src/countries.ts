@@ -77,6 +77,7 @@ import equatorial_guinea from './countries/equatorial_guinea.geojson';
 import eritrea from './countries/eritrea.geojson';
 import estonia from './countries/estonia.geojson';
 import ethiopia from './countries/ethiopia.geojson';
+import amhara_region from './countries/amhara_region.geojson';
 import fiji from './countries/fiji.geojson';
 import finland from './countries/finland.geojson';
 import france from './countries/france.geojson';
@@ -276,6 +277,7 @@ export const countries = {
   eritrea,
   estonia,
   ethiopia,
+  amhara_region,
   fiji,
   finland,
   france,
@@ -421,6 +423,9 @@ export const countryOptions = Object.keys(countries).map(x => {
   }
   if (x === 'italy_regions') {
     return [x, 'Italy (regions)'];
+  }
+  if (x === 'amhara_region') {
+    return [x, 'Amhara (region)'];
   }
   if (x === 'france_regions') {
     return [x, 'France (regions)'];
